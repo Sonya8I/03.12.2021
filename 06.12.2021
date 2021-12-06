@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int a, b, c, i, sum, k1, k2;
+    sum = 0;
+    cin >> c;
+    for (i=0; i<c; ++i) {
+        cin >> a >> b;
+        if (a>b){
+            sum += a;
+        } else {
+            sum += b;
+        }
+    }
+    if (sum%3==0){
+        cout << sum;
+    } else  {
+        cout << "No";
+    }
+
+    return 0;
+} 
